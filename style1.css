@@ -3,9 +3,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #form {
     width: 300px;
-    margin: 20vh auto 0 auto;
     padding: 20px;
     background-color: whitesmoke;
     border-radius: 4px;
@@ -25,20 +31,22 @@ body {
     background-color: rgb(41, 57, 194);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .input-control {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .input-control input {
     border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	display: block;
-	font-size: 12px;
-	padding: 10px;
-	width: 100%;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
 }
 
 .input-control input:focus {
@@ -57,4 +65,5 @@ body {
     color: #ff3860;
     font-size: 9px;
     height: 13px;
+    display: none;
 }
